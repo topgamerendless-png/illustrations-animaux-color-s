@@ -4,6 +4,7 @@ const animals = [
     `<svg class='animal' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 150 150'><ellipse cx='75' cy='75' rx='60' ry='30' fill='green' /></svg>` 
 ];
 
+// Gère l'événement de clic du bouton pour générer un animal aléatoire
 document.getElementById('generate-btn').addEventListener('click', () => {
     const randomAnimal = animals[Math.floor(Math.random() * animals.length)];
     document.getElementById('animal-illustration').innerHTML = randomAnimal;
