@@ -6,10 +6,10 @@ const animals = [
 
 // Gère l'événement de clic du bouton pour générer un animal aléatoire
 // Lorsqu'on clique sur le bouton, un animal aléatoire est choisi dans le tableau et affiché
-// Utilisation de Math.random() pour sélectionner un élément du tableau 'animals' de manière aléatoire
-// L'illustration de l'animal est ensuite mise à jour dans l'élément HTML avec l'id 'animal-illustration'
+// Utilise Math.random() pour sélectionner un élément du tableau 'animals' de manière aléatoire
+// L'illustration de l'animal est mise à jour dans l'élément HTML avec l'id 'animal-illustration'
 document.getElementById('generate-btn').addEventListener('click', () => {
-    // Sélectionne un index aléatoire
+    // Sélectionne un index aléatoire d’un animal
     const randomIndex = Math.floor(Math.random() * animals.length);
     const randomAnimal = animals[randomIndex];
     // Met à jour l'illustration de l'animal dans l'élément HTML
